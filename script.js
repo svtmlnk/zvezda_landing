@@ -83,7 +83,7 @@
 
     // Ждём и проигрыш анимации, и загрузку страницы (но не дольше 5 секунд)
     Promise.all([
-      wait(prefersReducedMotion ? 500 : 2700),
+      wait(prefersReducedMotion ? 300 : 1500),
       Promise.race([pageLoaded, wait(5000)]),
     ]).then(() => {
       intro.classList.add("intro--hide");
