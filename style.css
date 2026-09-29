@@ -93,10 +93,10 @@
       }
 
       .label::before {
-        content: "";
-        width: 36px;
-        height: 1px;
-        background: currentColor;
+        content: url("./assets/mini_logo.svg");
+        /* width: 36px;
+        height: 1px; */
+        /* background: currentColor; */
       }
 
       /* Кнопка */
