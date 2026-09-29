@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ЗВЕЗДА</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/logo_icon.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap"
+    />
+  </head>
+  <body>
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header">
+      <a class="logo" href="#top">
+        <img src="./assets/logo.svg" alt="logo" width="100px"/>
+      </a>
+
+      <nav class="nav" id="site-nav">
+        <a class="nav__link nav__link--active" href="#top">Главная</a>
+        <a class="nav__link" href="#about">О компании</a>
+        <a class="nav__link" href="#products">Продукция</a>
+        <a class="nav__link" href="#advantages">Преимущества</a>
+        <a class="nav__link" href="#contact">Связаться</a>
+      </nav>
+
+      <button
+        class="burger"
+        type="button"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <!-- ==================== SECTION 1: HERO ==================== -->
+    <section class="section hero" id="top">
+      <div class="container hero__content">
+        <div class="label hero__label">Оптовые поставки нефтепродуктов</div>
+        <h1 class="heading heading--hero">
+          Энергия,
+          <span class="heading__accent hero__accent">которой доверяют.</span>
+        </h1>
+        <p class="hero__text">
+          Прямые поставки СУГ, бензинов, дизельного топлива и авиационного
+          керосина для промышленности и энергетики.
+        </p>
+        <a
+          class="btn btn--dark"
+          href="https://example.com"
+          target="_blank"
+          rel="noopener"
+          >Перейти на платформу ↗</a
+        >
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 2: О КОМПАНИИ ==================== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div>
+            <div class="label">О компании</div>
+            <h2 class="heading">
+              «Звезда» — компания,
+              <span class="heading__accent">на которую можно положиться</span>
+            </h2>
+          </div>
+          <p class="about__text">
+            Мы работаем на рынке нефтепродуктов с прозрачными условиями,
+            гарантированным качеством и чёткими сроками. Каждая партия
+            сопровождается паспортом качества, а логистика выстроена от завода
+            до вашего резервуара.
+          </p>
+        </div>
+
+        <div class="stats">
+          <div class="stats__item">
+            <b class="stats__value">15+</b
+            ><span class="stats__caption">лет на рынке</span>
+          </div>
+          <div class="stats__item">
+            <b class="stats__value">2 млн т</b
+            ><span class="stats__caption">отгружено за год</span>
+          </div>
+          <div class="stats__item">
+            <b class="stats__value">120+</b
+            ><span class="stats__caption">постоянных клиентов</span>
+          </div>
+          <div class="stats__item">
+            <b class="stats__value">99,8%</b
+            ><span class="stats__caption">поставок в срок</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 3: ПРОДУКЦИЯ ==================== -->
+    <section class="section section--dark products" id="products">
+      <div class="container">
+        <div class="label">Продукция</div>
+        <h2 class="heading">
+          Что мы <span class="heading__accent">поставляем</span>
+        </h2>
+
+        <div class="products__list">
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 48 48">
+              <rect x="10" y="14" width="28" height="24" rx="12" />
+              <path d="M18 14v-4h12v4M24 22c-4 4-4 8 0 10 4-2 4-6 0-10z" />
+            </svg>
+            <h3 class="card__title">СУГ</h3>
+            <p class="card__text">
+              Пропан, бутан, ПБТ. Автомобильные и промышленные нужды, ж/д и
+              автотранспорт.
+            </p>
+          </article>
+
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 48 48">
+              <path
+                d="M12 40V12h14v28M12 24h14M26 18h6l4 6v12a3 3 0 0 0 6 0V16"
+              />
+            </svg>
+            <h3 class="card__title">Бензины</h3>
+            <p class="card__text">
+              АИ-92, АИ-95, АИ-98 экологического класса К5. Оптовые партии.
+            </p>
+          </article>
+
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 48 48">
+              <path d="M8 34h32M12 34V22h14v12M26 26h8l4 4v4M16 18h6" />
+              <circle cx="16" cy="38" r="3" />
+              <circle cx="32" cy="38" r="3" />
+            </svg>
+            <h3 class="card__title">Дизельное топливо</h3>
+            <p class="card__text">
+              Летнее, зимнее и арктическое. Соответствие ГОСТ и техрегламенту.
+            </p>
+          </article>
+
+          <article class="card">
+            <svg class="card__icon" viewBox="0 0 48 48">
+              <path
+                d="M6 26l14-3 12-14h4l-6 14 10 1 4-3h3l-2 5 2 5h-3l-4-3-10 1 6 14h-4L20 29 6 26z"
+              />
+            </svg>
+            <h3 class="card__title">Авиационный керосин</h3>
+            <p class="card__text">
+              ТС-1 и Jet A-1 для авиакомпаний и аэропортовых топливных
+              комплексов.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 4: ПРЕИМУЩЕСТВА ==================== -->
+    <section class="section advantages" id="advantages">
+      <div class="container">
+        <div class="label">Преимущества</div>
+        <h2 class="heading">
+          Почему нас <span class="heading__accent">выбирают</span>
+        </h2>
+
+        <div class="advantages__list">
+          <div class="advantage">
+            <span class="advantage__number">01</span>
+            <h3 class="advantage__title">Гарантия качества</h3>
+            <p class="advantage__text">
+              Паспорта качества на каждую партию и независимый лабораторный
+              контроль.
+            </p>
+          </div>
+          <div class="advantage">
+            <span class="advantage__number">02</span>
+            <h3 class="advantage__title">Собственная логистика</h3>
+            <p class="advantage__text">
+              Ж/д цистерны, автотранспорт и трубопровод — поставка точно в срок.
+            </p>
+          </div>
+          <div class="advantage">
+            <span class="advantage__number">03</span>
+            <h3 class="advantage__title">Прозрачные цены</h3>
+            <p class="advantage__text">
+              Фиксированные условия договора без скрытых комиссий и наценок.
+            </p>
+          </div>
+          <div class="advantage">
+            <span class="advantage__number">04</span>
+            <h3 class="advantage__title">Индивидуальный подход</h3>
+            <p class="advantage__text">
+              Персональный менеджер и гибкие условия оплаты для постоянных
+              клиентов.
+            </p>
+          </div>
+          <div class="advantage">
+            <span class="advantage__number">05</span>
+            <h3 class="advantage__title">Юридическая чистота</h3>
+            <p class="advantage__text">
+              Все лицензии и разрешения, полное документальное сопровождение
+              сделок.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 5: КОНТАКТЫ ==================== -->
+    <section class="section contact" id="contact">
+      <div class="orb" aria-hidden="true"></div>
+
+      <div class="container contact__inner">
+        <h2 class="heading contact__title">
+          Начнём <span class="heading__accent">сотрудничество</span>
+        </h2>
+        <p class="contact__subtitle">
+          Оставьте данные — менеджер свяжется с вами в течение рабочего дня.
+        </p>
+
+        <form class="form" id="contact-form">
+          <input class="form__input" required placeholder="ФИО" />
+
+          <div class="form__row">
+            <input
+              class="form__input"
+              required
+              type="email"
+              placeholder="Email"
+            />
+            <input
+              class="form__input"
+              required
+              type="tel"
+              placeholder="Телефон"
+            />
+          </div>
+
+          <input class="form__input" required placeholder="Название компании" />
+          <textarea
+            class="form__input form__input--textarea"
+            placeholder="Опишите ваш запрос: продукт, объём, регион поставки"
+          ></textarea>
+
+          <label class="form__agreement">
+            <input class="form__checkbox" required type="checkbox" />
+            <span>Я согласен на обработку персональных данных</span>
+          </label>
+
+          <button class="btn form__submit" type="submit">
+            Отправить заявку
+          </button>
+        </form>
+
+        <div class="contact__success" id="contact-success">
+          Спасибо! Заявка отправлена.
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__grid">
+          <div>
+            <a class="logo" href="#top">
+              <img src="./assets/logo.svg" alt="logo" width="50%"/>
+            </a>
+            <p class="site-footer__text">
+              Оптовая торговля нефтепродуктами. Деятельность осуществляется на
+              основании действующих лицензий и разрешений.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="site-footer__title">Навигация</h4>
+            <ul class="site-footer__list">
+              <li class="site-footer__item">
+                <a class="site-footer__link" href="#about">О компании</a>
+              </li>
+              <li class="site-footer__item">
+                <a class="site-footer__link" href="#products">Продукция</a>
+              </li>
+              <li class="site-footer__item">
+                <a class="site-footer__link" href="#advantages">Преимущества</a>
+              </li>
+              <li class="site-footer__item">
+                <a class="site-footer__link" href="#contact">Связаться</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="site-footer__title">Документы</h4>
+            <ul class="site-footer__list">
+              <li class="site-footer__item">
+                <a class="site-footer__link" href="#">Лицензии</a>
+              </li>
+              <li class="site-footer__item">
+                <a class="site-footer__link" href="#"
+                  >Политика конфиденциальности</a
+                >
+              </li>
+              <li class="site-footer__item">
+                <a class="site-footer__link" href="#">Реквизиты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="site-footer__copyright">
+          © 2026 ООО «Звезда». Все права защищены.
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
